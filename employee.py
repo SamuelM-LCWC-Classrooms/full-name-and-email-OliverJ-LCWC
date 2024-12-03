@@ -21,7 +21,3 @@ class Employee:
 
     def set_firstname(self, new_firstname):
         self.__firstname = new_firstname
-
-emp_1 = Employee("John Smith", "john.smith@company.com", "John")
-emp_2 = Employee("Mary Sue", "mary.sue@company.com", "Mary")             
-emp_3 = Employee("Antony Walker", "antony.walker@company.com", "Antony")
