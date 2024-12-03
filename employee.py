@@ -1,23 +1,8 @@
 class Employee:
-    def __init__(self, fullname: str, email: str, firstname: str):
-        self.__fullname = fullname
-        self.__email = email
+    def __init__(self, firstname, lastname) -> None:
         self.__firstname = firstname
+        self.__lastname = lastname
+        self.__email = f"{firstname}.{lastname}@company.com"
+        fullname = f"{firstname} {lastname}"
 
-    def get_fullname(self):
-        return self.__fullname
-        
-    def get_email(self):
-        return self.__email
-        
-    def get_firstname(self):
-        return self.__firstname
 
-    def set_fullname(self, new_fullname):
-        self.__fullname = new_fullname
-
-    def set_email(self, new_email):
-        self.__email = new_email
-
-    def set_firstname(self, new_firstname):
-        self.__firstname = new_firstname
